@@ -57,6 +57,123 @@ $ P_n = k T \Delta f \quad (\Delta f = B) $
 - $ T $ - Temperature in Kelvin(K): $ K = \degree C + 273 $
 - $ \Delta f $ - Bandwidth of system
 
+#### Resistor Noise
+
+Take a voltage source $ e_{n} $ with resistance $ R $, in series with a resistor $ R_{l} $. By the maximum power theorem, the maximum noise power voltage occurs when $ R = R_{l} $. Equating the noise power equation to the power dissipated in the resistor, the RMS noise voltage in a resistor $ e_n $ is:
+
+$
+\begin{aligned}
+    P_{n} = k T \Delta f = \frac{(e_{n}/2)^2}{R} \implies e_n = \sqrt{4kT\Delta f R}
+\end{aligned}
+$
+
+#### Decibel definition
+A Bel is defined as:  
+
+$
+\begin{aligned}
+Bel = \log_{10} \left(\frac{P_{out}}{P_{in}} \right) 
+\end{aligned}
+$
+
+Thus a decibel is: 
+
+$
+\begin{aligned}
+dB = 10 \log_{10} \left(\frac{P_{out}}{P_{in}} \right) = 20 log_{10} \left(\frac{V_{out}}{V_{in}} \right) 
+\end{aligned}
+$
+
+#### Amplifier Noise Figure
+Noise ratio NR (or factor, F):
+
+$
+\begin{aligned}
+NR = \frac{(S/N)_{in}}{(S/N)_{out}}
+\end{aligned}
+$
+
+- $(S/N)_{in} $ is the signal power to noise power ratio at the input to an amplifier (or other device)
+- $(S/N)_{out} $ signal to noise power ratio at the output
+
+The Noise Figure, NF (in dB):
+
+$
+\begin{aligned}
+NF = 10 \log_{10}(NR) \quad (dB)
+\end{aligned}
+$
+
+In a noiseless system, NR = 1, NF = 0 dB
+
+TODO: Cascaded system
+
+#### Effective Noise Temperature
+
+Measure of system noise as referred to the input. For system with power gain, $ P_{G} $, the effective noise temperature (in Kelvin) is:
+
+$
+\begin{aligned}
+T_{e} = \frac{P_{n}}{P_{G} kB}
+\end{aligned}
+$
+
+$ T_e $ is chosen to make the noise at the output of a noise free network equal to the noise at the output of the noisy network:
+
+![Noise Graph](Images/EffectiveNoiseCircuit.png "Noise")
+
+The noise at the output is still:
+
+$
+\begin{aligned}
+P_{n,out} = (kBT_{s} + kBT_{e})P_{G}
+\end{aligned}
+$
+
+Thus, at room temperature the input noise power $ N_{in} $, and output noise power $ N_{out} $ are:
+
+$
+\begin{aligned}
+N_{in} = kBT_{0} \quad N_{out} = (kBT_{0} + kBT_{e})P_{G}
+\end{aligned}
+$
+
+The signal output power $S_{out} $ is related to the signal input power:
+
+$
+\begin{aligned}
+S_{out} = P_{G} S_{in}
+\end{aligned}
+$
+
+Giving ratios:
+
+$
+\begin{aligned}
+\frac{S_{in}}{N_{in}} = \frac{S_{in}}{kBT_{0}}
+\end{aligned}
+$
+
+$
+\begin{aligned}
+\frac{S_{out}}{N_{out}} = \frac{P_{G} S_{in}}{(kBT_{0} + kBT_{e})P_{G}}
+\end{aligned}
+$
+
+The noise ratio NR is thus related to the effective noise temperature $ T_e $ as:
+
+$
+\begin{aligned}
+NR = F = \frac{(S/N)_{in}}{(S/N)_{out}} = \frac{T_{0} + T_{e}}{T_{0}} = 1 + \frac{T_{e}}{T_{0}} \\ \\ \implies T_{e} = T_{0}(1 - F)
+\end{aligned}
+$
+
+## Analogue Carrier Modulation
+
+
+
+
+
 
 
 

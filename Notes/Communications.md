@@ -123,10 +123,8 @@ $$\frac{S_{out}}{N_{out}} = \frac{P_{G} S_{in}}{(kBT_{0} + kBT_{e})P_{G}}$$
 The noise ratio NR is thus related to the effective noise temperature $T_e$ as:
 
 ```math
-NR = F = \frac{(S/N)_{in}}{(S/N)_{out}} = \frac{T_{0} + T_{e}}{T_{0}} = 1 + \frac{T_{e}}{T_{0}} // \implies T_{e} = T_{0}(F - 1)$$
+NR = F = \frac{(S/N)_{in}}{(S/N)_{out}} = \frac{T_{0} + T_{e}}{T_{0}} = 1 + \frac{T_{e}}{T_{0}} \implies T_{e} = T_{0}(F - 1)$$
 ```
-
-$$ \implies T_{e} = T_{0}(F - 1)$$
 
 ## 2 Cascaded Amplifiers Proof
 

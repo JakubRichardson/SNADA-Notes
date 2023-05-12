@@ -84,7 +84,7 @@ We begin with the general form for the trigonometric fourier series:
 $$x(t) = \frac{A_{0}}{2} + \sum_{n=1}^{\infty} A_{n} \cos(n \omega_{0} t) + B_{n} \sin(n \omega_{0} t)$$
 
 
-We substitute the [complex relationships for $\sin$ and $\cos$](#complex-phasors):
+We substitute the [complex relationships for sin and cos](#complex-phasors):
 
 $$x(t) = \frac{A_{0}}{2} + \sum_{n=1}^{\infty} \left[A_{n} \left(\frac{e^{jn\omega_{0}t} + e^{-jn\omega_{0}t}}{2} \right) + B_{n} \left(\frac{e^{jn\omega_{0}t} - e^{-jn\omega_{0}t}}{2j} \right)\right]$$
 
@@ -100,12 +100,14 @@ Changing the bounds of the second summation using the substitution $m=-n$:
 $$x(t) = \frac{A_{0}}{2} + \sum_{n=1}^{\infty} \left[\left(\frac{A_{n} - jB_{n}}{2} \right) e^{jn\omega_{0}t} \right] + \sum_{m=-\infty}^{-1} \left[\left(\frac{A_{-m} + jB_{-m}}{2} \right)e^{jn\omega_{0}t} \right]$$
 
 Defining the complex fourier coefficient as:
-$$X_{n} =
+```math
+X_{n} =
 \begin{cases}
     \frac{A_{n} - jB_{n}}{2}, & \text{if $n > 0$}\\
     \frac{A_{0}}{2}, & \text{if n = 0}\\
     \frac{A_{-n} + jB_{-n}}{2}, & \text{if n < 0}
-\end{cases}$$
+\end{cases}
+```
 
 >**Note:** $X_{n}$ is conjugate symmetric, i.e. $X_{-n} = X_{n}^{\ast}$. This means, $|X_{-n}| = |X_{n}|$, so the magnitude is even, and $\angle X_{-n} = - \angle X_{n}$, so the phase is even
  

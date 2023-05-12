@@ -77,7 +77,9 @@ $$dB = 10 \log_{10} \left(\frac{P_{out}}{P_{in}} \right) = 20 log_{10} \left(\fr
 #### Amplifier Noise Figure
 Noise ratio NR (or factor, F):
 
-$$NR = \frac{(S/N)_{in}}{(S/N)_{out}}$$
+```math
+NR = \frac{(S/N)_{in}}{(S/N)_{out}}
+```
 
 - $(S/N)_{in}$ is the signal power to noise power ratio at the input to an amplifier (or other device)
 - $(S/N)_{out}$ signal to noise power ratio at the output
@@ -120,14 +122,19 @@ $$\frac{S_{out}}{N_{out}} = \frac{P_{G} S_{in}}{(kBT_{0} + kBT_{e})P_{G}}$$
 
 The noise ratio NR is thus related to the effective noise temperature $T_e$ as:
 
-$$NR = F = \frac{(S/N)_{in}}{(S/N)_{out}} = \frac{T_{0} + T_{e}}{T_{0}} = 1 + \frac{T_{e}}{T_{0}}$$
+```math
+NR = F = \frac{(S/N)_{in}}{(S/N)_{out}} = \frac{T_{0} + T_{e}}{T_{0}} = 1 + \frac{T_{e}}{T_{0}} // \implies T_{e} = T_{0}(F - 1)$$
+```
+
 $$ \implies T_{e} = T_{0}(F - 1)$$
 
 ## 2 Cascaded Amplifiers Proof
 
 $$S_{out} = G_{sys} S_{in}$$
 
-$$NR_{sys} = F_{sys} = \frac{(S/N)_{in}}{(S/N)_{out}} = \frac{S_{in} N_{out}}{S_{out}N_{in}} = \frac{S_{in}N_{out}}{G_{sys}S_{in}N_{in}} = \frac{N_{out}}{G_{sys}N_{in}}$$
+```math
+NR_{sys} = F_{sys} = \frac{(S/N)_{in}}{(S/N)_{out}} = \frac{S_{in} N_{out}}{S_{out}N_{in}} = \frac{S_{in}N_{out}}{G_{sys}S_{in}N_{in}} = \frac{N_{out}}{G_{sys}N_{in}}$$
+```
 
 Each amplifier adds noise, as per $N_{in}$:
 

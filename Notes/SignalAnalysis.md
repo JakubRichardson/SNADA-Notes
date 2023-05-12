@@ -59,7 +59,7 @@ Verifying for $\omega_{3}$:
 
 $$\frac{\omega_{3}}{\omega_{2}} = \frac{7}{4} = \frac{n_{3} \omega_{0}}{n_{2} \omega_{0}} \implies n_{3} = \frac{7}{4}n_{2} \implies n_{3} = 7$$
 
-The signal $x(t)$ is periodic, with fundamental frequency $\omega_{0} = \frac{\omega_{1}}{n_{1}} = \frac{1}{6} $ , and contains the 3rd, 4th and 7th harmonics.
+The signal $x(t)$ is periodic, with fundamental frequency $\omega_{0} = \frac{\omega_{1}}{n_{1}} = \frac{1}{6}$ , and contains the 3rd, 4th and 7th harmonics.
 
 ## Complex Phasors
 A phasor is a complex signal, that has both a real and imaginary component, and is able to relay information about amplitude, frequency and phase. 
@@ -100,13 +100,14 @@ Changing the bounds of the second summation using the substitution $m=-n$:
 $$x(t) = \frac{A_{0}}{2} + \sum_{n=1}^{\infty} \left[\left(\frac{A_{n} - jB_{n}}{2} \right) e^{jn\omega_{0}t} \right] + \sum_{m=-\infty}^{-1} \left[\left(\frac{A_{-m} + jB_{-m}}{2} \right)e^{jn\omega_{0}t} \right]$$
 
 Defining the complex fourier coefficient as:
-$$X_{n} = \begin{cases}
-			\frac{A_{n} - jB_{n}}{2}, & \text{if $n > 0$}\\
-            \frac{A_{0}}{2}, & \text{if n = 0}\\
-            \frac{A_{-n} + jB_{-n}}{2}, & \text{if n < 0}\\
-		 \end{cases}$$
+$$X_{n} =
+\begin{cases}
+    \frac{A_{n} - jB_{n}}{2}, & \text{if $n > 0$}\\
+    \frac{A_{0}}{2}, & \text{if n = 0}\\
+    \frac{A_{-n} + jB_{-n}}{2}, & \text{if n < 0}
+\end{cases}$$
 
->**Note:** $X_{n}$ is conjugate symmetric, i.e. $X_{-n} = X^{*}_{n}$. This means, $|X_{-n}| = |X_{n}|$, so the magnitude is even, and $\angle X_{-n} = - \angle X_{n}$, so the phase is even
+>**Note:** $X_{n}$ is conjugate symmetric, i.e. $X_{-n} = X_{n}^{\ast}$. This means, $|X_{-n}| = |X_{n}|$, so the magnitude is even, and $\angle X_{-n} = - \angle X_{n}$, so the phase is even
  
 As the summations cover all integers $n \in (-\infty, \infty)$ the equation can be simplified to:
 

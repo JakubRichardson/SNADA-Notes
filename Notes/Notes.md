@@ -19,7 +19,9 @@ inversely proportional to frequency
 
 Noise Voltage ($nV \sqrt{Hz}$) vs Frequency ($Hz$) usually with log scale graph:
 
-![Noise Graph](Images/noise.jfif "Noise")
+<p align="center">
+    <img src="../Images/Noise/noise.jfif" alt="Noise Graph" width="400"/>
+</p>
 
 ### External Noise
 
@@ -84,7 +86,7 @@ The Noise Figure, NF (in dB):
 
 $$NF = 10 \log_{10}(NR) \quad (dB)$$
 
-In a noiseless system, NR = 1, NF = 0 dB
+In a noiseless system, $NR = 1$, $NF = 0 dB$
 
 #### Effective Noise Temperature
 
@@ -94,7 +96,9 @@ $$T_{e} = \frac{P_{n,int}}{P_{G} kB}$$
 
 $T_e$ is chosen to make the noise at the output of a noise free network equal to the noise at the output of the noisy network:
 
-![Noise Graph](Images/EffectiveNoiseCircuit.png "Noise")
+<p align="center">
+    <img src="../Images/Noise/EffectiveNoiseCircuit.png" alt="Noise Graph" width="600"/>
+</p>
 
 The noise at the output is still:
 

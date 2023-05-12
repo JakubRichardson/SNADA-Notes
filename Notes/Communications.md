@@ -1,4 +1,4 @@
-# Sensor Networks and Data Analysis - Communications
+# Communications
 
 ## Noise and Bandwidth
 

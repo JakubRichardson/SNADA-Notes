@@ -53,10 +53,10 @@ Sources include:
 
 Noise power for thermal/Johnson/white noise is:
 
-$P_n = k T B \quad (B = \Delta f)$
+$$P_n = k T B \quad (B = \Delta f)$$
 
-- $ k $ - Boltzmann's constant:  $1.38 \times 10^-23$ J/K
-- $ T $ - Temperature in Kelvin(K): $K = \degree C + 273$
+- $k$ - Boltzmann's constant:  $1.38 \times 10^-23$ J/K
+- $T$ - Temperature in Kelvin(K): $K = \degree C + 273$
 - B = $\Delta f$ - Bandwidth of system
 
 #### Resistor Noise
@@ -120,7 +120,8 @@ $$\frac{S_{out}}{N_{out}} = \frac{P_{G} S_{in}}{(kBT_{0} + kBT_{e})P_{G}}$$
 
 The noise ratio NR is thus related to the effective noise temperature $T_e$ as:
 
-$$NR = F = \frac{(S/N)_{in}}{(S/N)_{out}} = \frac{T_{0} + T_{e}}{T_{0}} = 1 + \frac{T_{e}}{T_{0}} \\ \\ \implies T_{e} = T_{0}(F - 1)$$
+$$NR = F = \frac{(S/N)_{in}}{(S/N)_{out}} = \frac{T_{0} + T_{e}}{T_{0}} = 1 + \frac{T_{e}}{T_{0}}$$
+$$ \implies T_{e} = T_{0}(F - 1)$$
 
 ## 2 Cascaded Amplifiers Proof
 
